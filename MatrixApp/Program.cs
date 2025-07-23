@@ -2,7 +2,6 @@
 
 
 using MathTool;
-using Mat2 = MathTool.Matrix2D;
 
 Image2D A = new Image2D(400, 4000);    // create a 400x400 image
 Image2D B = new Image2D(400, 400);    // create a 400x400 image
