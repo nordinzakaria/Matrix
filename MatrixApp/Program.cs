@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-/*
 using MathTool;
 using Mat2 = MathTool.Matrix2D;
 
@@ -24,9 +23,9 @@ Aarr.Copy(B);  // copy B into Aarr
 
 Image2D C = (Image2D)Aarr;  // assign Aar to C
 C.Display("C");         // display C
-*/
 
 
+/*
 using MathTool;
 using Mat2 = MathTool.Matrix2D;  
 
@@ -46,7 +45,7 @@ Aarr.Copy(C);  // copy C into Aarr
 
 D = C.Minus((Matrix2D)Aarr);  // C - Aarr = D
 D.Save("DminusAarr.txt");
-
+*/
 
 
 
