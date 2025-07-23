@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+/*
 using MathTool;
 using Mat2 = MathTool.Matrix2D;
 
@@ -18,14 +19,14 @@ A.Brighten(10);  // Brighten image A
 A.Display("Brighten version");         // save to MatD.txt
 
 Array2D Aarr = new Image2D();  // test polymorphism
-Aarr.Resize(A.NRow, A.NCol);  // resize to 4 4
-Aarr.Copy(B);  // copy C into Aarr
+Aarr.Resize(A.NRow, A.NCol);  // resize to same size as A
+Aarr.Copy(B);  // copy B into Aarr
 
 Image2D C = (Image2D)Aarr;  // assign Aar to C
 C.Display("C");         // display C
+*/
 
 
-/*
 using MathTool;
 using Mat2 = MathTool.Matrix2D;  
 
@@ -39,10 +40,13 @@ C.Save("MatC.txt");    // save to MatC.txt
 Mat2 D = new Mat2(C);  // D will be a copy of C
 D.Save("MatD.txt");         // save to MatD.txt
 
-Array2D Aarr = new Mat2();  // test polymorphism
+Array2D Aarr = new Mat2();  // create a Mat2 object, assign to Aarr
 Aarr.Resize(4, 4);  // resize to 4 4
 Aarr.Copy(C);  // copy C into Aarr
-*/
+
+D = C.Minus((Matrix2D)Aarr);  // C - Aarr = D
+D.Save("DminusAarr.txt");
+
 
 
 
